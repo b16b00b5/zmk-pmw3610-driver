@@ -734,6 +734,7 @@ static int pmw3360_async_init_power_up(const struct device *dev)
 {
 	/* Reset sensor */
 
+	LOG_DBG("PMW3360 async POWER UP");
 	return reg_write(dev, PMW3360_REG_POWER_UP_RESET, 0x5A);
 }
 
